@@ -6,3 +6,26 @@
 .attribution a { 
 	color: hsl(228, 45%, 44%); 
 }
+
+
+.nav-logo {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.nav-bar {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+
+}
