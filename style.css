@@ -10,16 +10,10 @@
 
 body {
 	box-sizing: border-box;
-   	margin: 0;
+   	margin: 40px;
 	padding: 0;
 	font-family: 'Raleway Open Sans';
 	font-weight: 400;
-}
-
-
-header {
-	padding: 0 50px;
-	margin-top: 20px;
 }
 
 
@@ -47,27 +41,37 @@ input {
 /* Mobile design*/
 
 
-@media only screen and (max-width: 768px) {
-	.container {
-		flex-direction: column;
-		order: 2;	
+@media only screen and (max-width: 725px) {
+	.features {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		width: 100%;	
 	}
-	
 }
 
+@media only screen and (max-width: 725px) {
+	.features__body {
+		/*height: 100%;
+		width: 100%;*/
+		/*text-align: center;
+		flex-direction: column;*/
 
-/*-------------- */
-.nav-bar {
+	}
+
+}
+/*--Navigation bar-------- */
+
+
+.nav-bar__items {
+	width: 300px;
+	height: 80px;
 	display: flex;
+	flex-direction: row;
 	list-style: none;
 	text-decoration: none;
 	justify-content: space-around;
-}
-
-.nav-bar__items {
 	font-size: 14px;
 }
-
 
 .nav--logo {
 	display: flex;
@@ -79,60 +83,70 @@ input {
 	width: 150px;
 }
 
+
+/*----Main content-----*/
+
+
 .wrapper {
-	/*width: 80%; 
-*/	padding: 0 auto; 
+	padding: 0 auto; 
 	margin: 0 auto; 
-	width: 960px;
-	max-width: 960px;
-}
-
-
-.container {
-	display: flex;
-	padding-top: 40px;
-	justify-content: space-between;
 
 }
-
 
 .features {
-	/*width: 500px;*/
+	width: 1040px;
+	padding-top: 20px;
 	display: flex;
+	justify-content: space-between;
+}
+
+
+.features__body {
+	flex-basis: 50%;
 	flex-direction: column;
-    justify-content: center;
+	text-align: left;
 }
 
 
 .feature__image {
+	flex-basis: 40%;
 	width: 500px;
 	height: 400px;
 }
 
 
 .feature--cta {
-	width: 500px;
+
+}
+
+
+
+
+/*.feature--cta {
+	width: 100%;
 	display: inline-block;
 }
 
 
 .btn--cta {
+	width: 40%;
+	font-family: 'Raleway';
 	font-size: 13px;
 	color: white;
-	padding: 10px 60px;
+	/*padding: 10px 60px;*/
+/*	padding: 12px 20px;
 	background-color: hsl(224, 93%, 58%);
 	border-radius: 6px;
 }
+*/
 
-
-.feature--cta__box {
+/*.feature--cta__box {
 	border-color: hsl(0, 0%, 75%);
 	text-align: left;
-	font-family: ;
+	font-family: 'Raleway';
 	font-size: 12px;
-	width: 30%;
+	width: 50%;
 	padding: 12px 20px;
 	box-sizing: border-box;
 }
-
-
+*/
