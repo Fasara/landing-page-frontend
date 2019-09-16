@@ -117,15 +117,18 @@ input {
 
 
 .nav-bar__items {
-	width: 300px;
+	width: 500px;
 	display: flex;
 	list-style: none;
-	text-decoration: none;
-	justify-content: space-between;
 	font-size: 14px;
+	justify-content: space-around;
+
 }
 
-.nav--logo {
+
+.nav-bar {
+	width: auto;
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
 }
@@ -146,6 +149,7 @@ input {
 
 
 .wrapper {
+
 	padding: 0 auto; 
 	margin: 0 auto; 
 
@@ -162,7 +166,7 @@ input {
 
 
 
-.feature__image {
+.features__image {
 	/*flex-basis: 50%;
 	flex-direction: row;*/
 	width: 400px;
@@ -170,14 +174,14 @@ input {
 }
 
 
-.feature--cta {
+.features--cta {
 	width: 500px;
 	display: flex;
 
 }
 
 
-.feature--cta__input {
+.features--cta__input {
 	padding: 12px 20px;
 	margin: 5px;
 	display: inline-block;
@@ -191,7 +195,7 @@ input {
 }
 
 
- .feature--cta__btn {
+ .features--cta__btn {
  	width: auto;
 	font-family: 'Raleway';
 	font-size: 13px;
@@ -201,9 +205,7 @@ input {
 	margin: 5px;
 	background-color: hsl(224, 93%, 58%);
 	border-radius: 4px;
-
 }
-
 
 
 .features--background {
@@ -211,7 +213,6 @@ input {
 	background-image: url('images/bg-curve-desktop.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
 
 
@@ -220,15 +221,41 @@ input {
 
 }
 
+.features-text{
 
-.features__text {
-	width: 30%;
-	text-align: left;
-	color: 
+	/*width: 155px;
+	/*display: flex;
+	align-items: center;
+	justify-content: space-between;*/
 }
 
+.features-text--green {
+	color: #3DA08F;
+}	
 
-.features-arrow {
-	display: flex;
-	align-items: center;
+
+
+.features-feedback-box {
+	background-color: white;
+	width: auto;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 4px 4px 8px #e2e2e2;
+}
+
+.feature-feedback--quote {
+	padding: 20px;
+}
+
+.features-feedback__testimonial--round {
+	width: 50px;
+	border-radius: 50%;
+}
+
+.text-strong {
+	font-weight: 400px;
+}
+
+.features-feedback__testimonial {
+	display: flex;	
 }
