@@ -239,6 +239,8 @@ input {
 	background-color: white;
 	width: auto;
 	height: auto;
+	padding-bottom: 28px;
+	padding-right: 4px;
 	border-radius: 12px;
 	box-shadow: 4px 4px 8px #e2e2e2;
 }
