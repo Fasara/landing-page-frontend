@@ -1,4 +1,4 @@
-.attrubution {
+/*.attrubution {
 	font-size: 11px; 
 	text-align: center; 
 }
@@ -8,11 +8,17 @@
 }*/
 
 
+:root {
+
+--main-text-font : 'Raleway Open Sans';
+;
+}
+
 body {
 	box-sizing: border-box;
    	margin: 40px;
 	padding: 0;
-	font-family: 'Raleway Open Sans';
+	font-family: var(--main-text-font);
 	font-weight: 400;
 }
 
@@ -39,9 +45,10 @@ input {
 }
 
 
+
+
+
 /* Nav bar */
-
-
 
 .nav-bar {
 	width: auto;
@@ -54,71 +61,115 @@ input {
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
+}
+
+
+
+
+/* Main content */
+
+.band {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.wrapper {
+	padding: 0 auto; 
+	margin: 0 auto; 
+}
+
+.features {
+	display: flex;
+	flex-direction: row;	
+}
+
+.features-hero__image {
+	width: 400px;
+	height: 300px;
+}
+
+/* Mobile design*/
+
+@media screen (min-width: 375px) and (max-width: 599px){
+	
+	
+}
+
+
+
+@media screen  (min-width: 600px) and (max-width: 1023px) {
+	
+}
+
+@media screen (min-width: 1024px){
 
 }
 
 
 
-/* Mobile design*/
 
-/*
-@media only screen and (max-width: 725px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width: 768px) and (max-width: 1023px) {
 	.features {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		width: 100%;	
 	}
-}
 
-@media only screen and (max-width: 725px) {
+
+
 	.features__body {
 	text-align: center;
 	vertical-align: middle;
 	}
-}
 
 
-@media only screen and (max-width: 725px) {
 	.feature--cta {
 		flex-direction: column;
 	}
-}
 
-
-@media only screen and (max-width: 725px) {
 	.feature--cta__input {
 		width: 100%;
 		margin: 5px;
 	}
-}
 
 
 
-@media only screen and (max-width: 725px) {
+
 	.feature--cta__btn {
 		width: 100%;
 		margin: 5px;
 
 	}
 
-}
 
-
-@media only screen and (max-width: 725px) {
 	.feature__image {
 	flex-direction: column;
 	}
-}
 
 
-
-@media only screen and (max-width: 725px) {
 	.features__body {
 		width: 100%;
 		text-align: left;
 	}
 }
+
+
 */
+
 /*
 .@media only screen and (max-width: 725px){
 	.features--background {
@@ -186,11 +237,7 @@ input {
 
 
 .features__image {
-	/*flex-basis: 50%;
-/*	flex-direction: row;*/
-/*	width: 400px;
-	height: 300px;
-}*/
+	
 
 /*
 .features--cta {
