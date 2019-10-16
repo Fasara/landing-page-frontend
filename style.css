@@ -10,8 +10,9 @@
 
 :root {
 
---main-text-font : 'Raleway Open Sans';
-;
+--main-heading-font : 'Raleway Open Sans';
+--main-text-font: 'Open sans';
+--bright-blue: hsl(224, 93%, 58%);
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 
 
 h1 {
-	font-family: 'Raleway';
+	font-family: var(--main-heading-font);
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 150%;
@@ -33,7 +34,6 @@ h1 {
 
 
 p {
-	font-family: 'Open sans';
 	font-size: 14px;
 	line-height: 1.6;
 }
@@ -41,11 +41,35 @@ p {
 
 header, ul, 
 input {
-	font-family: 'Raleway';
+	
 }
 
 
 
+/* Mobile design */
+
+
+@media (min-width: 375px) and (max-width: 600px) {
+
+	.features-hero {
+		flex-wrap: wrap;
+		flex-direction: column;
+		order: 2;
+	}
+	
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+	.features-hero__media-image {
+		width: 100%;
+	
+	}
+}
+
+@media (min-width: 1024px) {
+
+}
 
 
 /* Nav bar */
@@ -65,7 +89,6 @@ input {
 
 
 
-
 /* Main content */
 
 .band {
@@ -78,32 +101,34 @@ input {
 	margin: 0 auto; 
 }
 
-.features {
+.features-hero {
 	display: flex;
 	flex-direction: row;	
 }
 
-.features-hero__image {
-	width: 400px;
-	height: 300px;
-}
-
-/* Mobile design*/
-
-@media screen (min-width: 375px) and (max-width: 599px){
-	
-	
+.features-hero__media-image {
+	width: 100%;
+	height: auto;
 }
 
 
-
-@media screen  (min-width: 600px) and (max-width: 1023px) {
-	
+.features-hero__cta {
+	flex-direction: column;
 }
 
-@media screen (min-width: 1024px){
+.feature-hero__input {
+	border: solid 3px var(--bright-blue);
+	width: 100%;
+	margin: 5px;
+}
+
+.feature-hero__btn {
+	width: 100%;
+	margin: 5px;
 
 }
+
+
 
 
 
