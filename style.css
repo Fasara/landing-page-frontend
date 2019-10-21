@@ -1,10 +1,10 @@
 /*.attrubution {
-	font-size: 11px; 
-	text-align: center; 
+	font-size: 11px;
+	text-align: center;
 }
 
-.attribution a { 
-	color: hsl(228, 45%, 44%); 
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }*/
 
 
@@ -18,7 +18,7 @@
 
 body {
 	box-sizing: border-box;
-   	margin: 40px;
+  margin: 40px;
 	padding: 0;
 	font-family: var(--main-text-font);
 	font-weight: 400;
@@ -40,9 +40,9 @@ p {
 }
 
 
-header, ul, 
+header, ul,
 input {
-	
+
 }
 
 
@@ -50,23 +50,31 @@ input {
 /* Mobile design */
 
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 375px) and (max-width: 800px) {
+
 
 	.features-hero {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 	}
 
+	.features-hero__body {
+		text-align: center;
+	}
+
 	.features-hero__cta {
 		flex-wrap: wrap;
 		flex-direction: column;
-
 	}
 
-	.features-hero__body {
-		align-items: center;
+	.features-hero__input {
+		margin-bottom: 10px;
 	}
-	
+
+	.features-hero__btn {
+			width: 100%;
+	}
+
 }
 
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -76,11 +84,6 @@ input {
 	}
 
 }
-
-@media (min-width: 1024px) {
-
-}
-
 
 /* Nav bar */
 
@@ -107,13 +110,12 @@ input {
 }
 
 .wrapper {
-	padding: 0 auto; 
-	margin: 0 auto; 
+	padding: 0 auto;
+	margin: 0 auto;
 }
 
 .features-hero {
 	display: flex;
-
 }
 
 .features-hero__media-image {
@@ -121,27 +123,32 @@ input {
 	height: auto;
 }
 
-
 .features-hero__cta {
 	display: flex;
+	justify-content: space-between;
 }
 
 .features-hero__input {
+	box-sizing: border-box;
+	flex-basis: 50%;
 	border-style: solid;
 	border-color: var(--bright-blue);
-	padding: 18px 32px;;
-
+	border-radius: 3px;
+	padding: 15px 30px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .features-hero__btn {
-	padding: 18px 32px;
+	box-sizing: border-box;
+	padding: 15px 30px;
+	flex-basis: 45%;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
+	border-radius: 3px;
 	font-size: 16px;
 	color: white;
 	background-color: var(--bright-blue);
-
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 
@@ -167,7 +174,7 @@ input {
 	.features {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
-		width: 100%;	
+		width: 100%;
 	}
 
 
@@ -261,8 +268,8 @@ input {
 
 .wrapper {
 
-	padding: 0 auto; 
-	margin: 0 auto; 
+	padding: 0 auto;
+	margin: 0 auto;
 
 }
 
@@ -278,7 +285,7 @@ input {
 
 
 .features__image {
-	
+
 
 /*
 .features--cta {
@@ -338,7 +345,7 @@ input {
 
 .features-text--green {
 	color: #3DA08F;
-}	
+}
 
 
 
@@ -367,5 +374,5 @@ input {
 }
 
 .features-feedback__testimonial {
-	display: flex;	
+	display: flex;
 }
