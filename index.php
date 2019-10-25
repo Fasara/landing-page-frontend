@@ -43,7 +43,7 @@
 
 <section>
   <div class="band wrapper">
-    <div class="business-">
+    <div class="business-testimonial">
 
     </div>
 
